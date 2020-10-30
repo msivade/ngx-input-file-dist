@@ -1,0 +1,7 @@
+export var InputFileRejectedReason;
+(function (InputFileRejectedReason) {
+    InputFileRejectedReason[InputFileRejectedReason["badFile"] = 0] = "badFile";
+    InputFileRejectedReason[InputFileRejectedReason["limitReached"] = 1] = "limitReached";
+    InputFileRejectedReason[InputFileRejectedReason["sizeReached"] = 2] = "sizeReached";
+})(InputFileRejectedReason || (InputFileRejectedReason = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5wdXQtZmlsZS1yZWplY3RlZC1yZWFzb24uanMiLCJzb3VyY2VSb290Ijoibmc6Ly9uZ3gtaW5wdXQtZmlsZS8iLCJzb3VyY2VzIjpbImxpYi9lbnVtcy9pbnB1dC1maWxlLXJlamVjdGVkLXJlYXNvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxNQUFNLENBQU4sSUFBWSx1QkFJWDtBQUpELFdBQVksdUJBQXVCO0lBQy9CLDJFQUFPLENBQUE7SUFDUCxxRkFBWSxDQUFBO0lBQ1osbUZBQVcsQ0FBQTtBQUNmLENBQUMsRUFKVyx1QkFBdUIsS0FBdkIsdUJBQXVCLFFBSWxDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGVudW0gSW5wdXRGaWxlUmVqZWN0ZWRSZWFzb24ge1xuICAgIGJhZEZpbGUsXG4gICAgbGltaXRSZWFjaGVkLFxuICAgIHNpemVSZWFjaGVkXG59XG4iXX0=
