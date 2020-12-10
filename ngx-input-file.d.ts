@@ -1,5 +1,5 @@
 /**
  * Generated bundle index. Do not edit.
  */
-/// <amd-module name="ngx-input-file" />
 export * from './public-api';
+export { DropZoneDirective as ɵa } from './lib/directives/drop-zone/drop-zone.directive';

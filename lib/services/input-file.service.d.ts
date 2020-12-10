@@ -1,6 +1,5 @@
 import { InputFile } from '../interfaces/input-file';
 import { InputFileConfig } from '../interfaces/input-file-config';
-import * as i0 from "@angular/core";
 export declare class InputFileService {
     private _config;
     constructor(_config: InputFileConfig);
@@ -22,6 +21,4 @@ export declare class InputFileService {
      * @param fileAccept
      */
     typeGuard(file: File, fileAccept: string): boolean;
-    static ɵfac: i0.ɵɵFactoryDef<InputFileService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<InputFileService>;
 }

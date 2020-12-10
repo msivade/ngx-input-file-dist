@@ -5,7 +5,6 @@ import { InputFile } from '../../interfaces/input-file';
 import { InputFileRejected } from '../../interfaces/input-file-rejected';
 import { InputFileService } from '../../services/input-file.service';
 import { MatButton } from '@angular/material/button';
-import * as i0 from "@angular/core";
 export declare class InputFileComponent implements ControlValueAccessor, OnInit {
     private formBuilder;
     private inputFileService;
@@ -50,7 +49,7 @@ export declare class InputFileComponent implements ControlValueAccessor, OnInit 
     files: InputFile[];
     form: FormGroup;
     id: string;
-    onChange: (files: InputFile[]) => void;
+    onChange: (files: Array<InputFile>) => void;
     onTouched: () => void;
     get canAddFile(): boolean;
     constructor(formBuilder: FormBuilder, inputFileService: InputFileService);
@@ -130,6 +129,4 @@ export declare class InputFileComponent implements ControlValueAccessor, OnInit 
      * Sets the reactive form to insert a link.
      */
     private setForm;
-    static ɵfac: i0.ɵɵFactoryDef<InputFileComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<InputFileComponent, "input-file", never, { "disabled": "disabled"; "placeholder": "placeholder"; "classAnimation": "classAnimation"; "fileAccept": "fileAccept"; "fileLimit": "fileLimit"; "iconAdd": "iconAdd"; "iconDelete": "iconDelete"; "iconFile": "iconFile"; "iconLink": "iconLink"; "linkEnabled": "linkEnabled"; "placeholderLink": "placeholderLink"; "sizeLimit": "sizeLimit"; }, { "acceptedFile": "acceptedFile"; "deletedFile": "deletedFile"; "rejectedFile": "rejectedFile"; }, never, never>;
 }

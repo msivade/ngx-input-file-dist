@@ -1,5 +1,4 @@
 import { EventEmitter } from '@angular/core';
-import * as i0 from "@angular/core";
 export declare class DropZoneDirective {
     disabled: boolean;
     itemDragOver: EventEmitter<any>;
@@ -32,6 +31,4 @@ export declare class DropZoneDirective {
      * @param event
      */
     private isTrueLeave;
-    static ɵfac: i0.ɵɵFactoryDef<DropZoneDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<DropZoneDirective, "[inputFileDropZone]", never, { "disabled": "disabled"; }, { "itemDragOver": "itemDragOver"; "itemDragLeave": "itemDragLeave"; "itemDrop": "itemDrop"; }, never>;
 }
