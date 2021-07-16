@@ -32,6 +32,7 @@ export declare class DropZoneDirective {
      * @param event
      */
     private isTrueLeave;
-    static ɵfac: i0.ɵɵFactoryDef<DropZoneDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<DropZoneDirective, "[inputFileDropZone]", never, { "disabled": "disabled"; }, { "itemDragOver": "itemDragOver"; "itemDragLeave": "itemDragLeave"; "itemDrop": "itemDrop"; }, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DropZoneDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<DropZoneDirective, "[inputFileDropZone]", never, { "disabled": "disabled"; }, { "itemDragOver": "itemDragOver"; "itemDragLeave": "itemDragLeave"; "itemDrop": "itemDrop"; }, never>;
 }
+//# sourceMappingURL=drop-zone.directive.d.ts.map

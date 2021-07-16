@@ -22,6 +22,7 @@ export declare class InputFileService {
      * @param fileAccept
      */
     typeGuard(file: File, fileAccept: string): boolean;
-    static ɵfac: i0.ɵɵFactoryDef<InputFileService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<InputFileService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<InputFileService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<InputFileService>;
 }
+//# sourceMappingURL=input-file.service.d.ts.map

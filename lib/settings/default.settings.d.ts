@@ -10,3 +10,4 @@ export declare const defaultSettings: {
     placeholderLink: string;
     sizeLimit: any;
 };
+//# sourceMappingURL=default.settings.d.ts.map

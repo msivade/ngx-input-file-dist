@@ -1,10 +1,17 @@
-import { ɵɵinject, ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, Inject, EventEmitter, ɵɵdefineDirective, ɵɵlistener, Directive, Input, Output, HostListener, ɵɵelement, ɵɵnextContext, ɵɵclassProp, ɵɵproperty, ɵɵsanitizeHtml, ɵɵelementContainer, ɵɵelementContainerStart, ɵɵelementStart, ɵɵtemplate, ɵɵelementEnd, ɵɵelementContainerEnd, ɵɵreference, ɵɵadvance, ɵɵpureFunction2, ɵɵgetCurrentView, ɵɵrestoreView, ɵɵtext, ɵɵtextInterpolate, ɵɵattribute, ɵɵsanitizeUrl, ɵɵdirectiveInject, ɵɵdefineComponent, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵProvidersFeature, forwardRef, ɵɵtemplateRefExtractor, Component, ViewChild, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
-import { Validators, FormBuilder, NG_VALUE_ACCESSOR, ɵangular_packages_forms_forms_y, NgControlStatusGroup, FormGroupDirective, DefaultValueAccessor, NgControlStatus, FormControlName, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgIf, NgForOf, NgClass, NgTemplateOutlet, CommonModule } from '@angular/common';
-import { MatButton, MatButtonModule } from '@angular/material/button';
-import { MatIcon, MatIconModule } from '@angular/material/icon';
-import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
-import { MatInput, MatInputModule } from '@angular/material/input';
+import * as i0 from '@angular/core';
+import { Injectable, Inject, EventEmitter, Directive, Input, Output, HostListener, forwardRef, Component, ViewChild, NgModule } from '@angular/core';
+import * as i1 from '@angular/forms';
+import { Validators, NG_VALUE_ACCESSOR, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import * as i3 from '@angular/common';
+import { CommonModule } from '@angular/common';
+import * as i4 from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
+import * as i6 from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
+import * as i7 from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import * as i8 from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 
 const defaultSettings = {
     classAnimation: 'bounce-in',
@@ -78,9 +85,9 @@ class InputFileService {
         return enabled;
     }
 }
-InputFileService.ɵfac = function InputFileService_Factory(t) { return new (t || InputFileService)(ɵɵinject('config')); };
-InputFileService.ɵprov = ɵɵdefineInjectable({ token: InputFileService, factory: InputFileService.ɵfac, providedIn: 'root' });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(InputFileService, [{
+InputFileService.ɵfac = function InputFileService_Factory(t) { return new (t || InputFileService)(i0.ɵɵinject('config')); };
+InputFileService.ɵprov = /*@__PURE__*/ i0.ɵɵdefineInjectable({ token: InputFileService, factory: InputFileService.ɵfac, providedIn: 'root' });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(InputFileService, [{
         type: Injectable,
         args: [{
                 providedIn: 'root'
@@ -159,10 +166,10 @@ class DropZoneDirective {
     }
 }
 DropZoneDirective.ɵfac = function DropZoneDirective_Factory(t) { return new (t || DropZoneDirective)(); };
-DropZoneDirective.ɵdir = ɵɵdefineDirective({ type: DropZoneDirective, selectors: [["", "inputFileDropZone", ""]], hostBindings: function DropZoneDirective_HostBindings(rf, ctx) { if (rf & 1) {
-        ɵɵlistener("dragover", function DropZoneDirective_dragover_HostBindingHandler($event) { return ctx.onDragOver($event); })("dragleave", function DropZoneDirective_dragleave_HostBindingHandler($event) { return ctx.onDragLeave($event); })("drop", function DropZoneDirective_drop_HostBindingHandler($event) { return ctx.onDrop($event); });
+DropZoneDirective.ɵdir = /*@__PURE__*/ i0.ɵɵdefineDirective({ type: DropZoneDirective, selectors: [["", "inputFileDropZone", ""]], hostBindings: function DropZoneDirective_HostBindings(rf, ctx) { if (rf & 1) {
+        i0.ɵɵlistener("dragover", function DropZoneDirective_dragover_HostBindingHandler($event) { return ctx.onDragOver($event); })("dragleave", function DropZoneDirective_dragleave_HostBindingHandler($event) { return ctx.onDragLeave($event); })("drop", function DropZoneDirective_drop_HostBindingHandler($event) { return ctx.onDrop($event); });
     } }, inputs: { disabled: "disabled" }, outputs: { itemDragOver: "itemDragOver", itemDragLeave: "itemDragLeave", itemDrop: "itemDrop" } });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(DropZoneDirective, [{
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(DropZoneDirective, [{
         type: Directive,
         args: [{
                 selector: '[inputFileDropZone]'
@@ -188,182 +195,182 @@ DropZoneDirective.ɵdir = ɵɵdefineDirective({ type: DropZoneDirective, selecto
 
 const _c0 = ["fileInput"];
 function InputFileComponent_label_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "label", 8);
+    i0.ɵɵelement(0, "label", 8);
 } if (rf & 2) {
-    const ctx_r0 = ɵɵnextContext();
-    ɵɵclassProp("active", ctx_r0.files == null ? null : ctx_r0.files.length);
-    ɵɵproperty("for", ctx_r0.id)("innerHtml", ctx_r0.placeholder, ɵɵsanitizeHtml);
+    const ctx_r0 = i0.ɵɵnextContext();
+    i0.ɵɵclassProp("active", ctx_r0.files == null ? null : ctx_r0.files.length);
+    i0.ɵɵproperty("for", ctx_r0.id)("innerHtml", ctx_r0.placeholder, i0.ɵɵsanitizeHtml);
 } }
 function InputFileComponent_ng_container_3_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0);
+    i0.ɵɵelementContainer(0);
 } }
 const _c1 = function (a0, a1) { return { $implicit: a0, index: a1 }; };
 function InputFileComponent_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "div", 9);
-    ɵɵtemplate(2, InputFileComponent_ng_container_3_ng_container_2_Template, 1, 0, "ng-container", 10);
-    ɵɵelementEnd();
-    ɵɵelementContainerEnd();
+    i0.ɵɵelementContainerStart(0);
+    i0.ɵɵelementStart(1, "div", 9);
+    i0.ɵɵtemplate(2, InputFileComponent_ng_container_3_ng_container_2_Template, 1, 0, "ng-container", 10);
+    i0.ɵɵelementEnd();
+    i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
     const file_r9 = ctx.$implicit;
     const i_r10 = ctx.index;
-    const ctx_r1 = ɵɵnextContext();
-    const _r5 = ɵɵreference(8);
-    ɵɵadvance(1);
-    ɵɵproperty("ngClass", ctx_r1.classAnimation);
-    ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", _r5)("ngTemplateOutletContext", ɵɵpureFunction2(3, _c1, file_r9, i_r10));
+    const ctx_r1 = i0.ɵɵnextContext();
+    const _r5 = i0.ɵɵreference(8);
+    i0.ɵɵadvance(1);
+    i0.ɵɵproperty("ngClass", ctx_r1.classAnimation);
+    i0.ɵɵadvance(1);
+    i0.ɵɵproperty("ngTemplateOutlet", _r5)("ngTemplateOutletContext", i0.ɵɵpureFunction2(3, _c1, file_r9, i_r10));
 } }
 function InputFileComponent_ng_container_4_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0);
+    i0.ɵɵelementContainer(0);
 } }
 function InputFileComponent_ng_container_4_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, InputFileComponent_ng_container_4_ng_container_2_ng_container_1_Template, 1, 0, "ng-container", 13);
-    ɵɵelementContainerEnd();
+    i0.ɵɵelementContainerStart(0);
+    i0.ɵɵtemplate(1, InputFileComponent_ng_container_4_ng_container_2_ng_container_1_Template, 1, 0, "ng-container", 13);
+    i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    ɵɵnextContext(2);
-    const _r3 = ɵɵreference(6);
-    ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", _r3);
+    i0.ɵɵnextContext(2);
+    const _r3 = i0.ɵɵreference(6);
+    i0.ɵɵadvance(1);
+    i0.ɵɵproperty("ngTemplateOutlet", _r3);
 } }
 function InputFileComponent_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "div", 11);
-    ɵɵtemplate(2, InputFileComponent_ng_container_4_ng_container_2_Template, 2, 1, "ng-container", 12);
-    ɵɵelementEnd();
-    ɵɵelementContainerEnd();
+    i0.ɵɵelementContainerStart(0);
+    i0.ɵɵelementStart(1, "div", 11);
+    i0.ɵɵtemplate(2, InputFileComponent_ng_container_4_ng_container_2_Template, 2, 1, "ng-container", 12);
+    i0.ɵɵelementEnd();
+    i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r2 = ɵɵnextContext();
-    const _r7 = ɵɵreference(10);
-    ɵɵadvance(2);
-    ɵɵproperty("ngIf", !ctx_r2.addLink)("ngIfElse", _r7);
+    const ctx_r2 = i0.ɵɵnextContext();
+    const _r7 = i0.ɵɵreference(10);
+    i0.ɵɵadvance(2);
+    i0.ɵɵproperty("ngIf", !ctx_r2.addLink)("ngIfElse", _r7);
 } }
 function InputFileComponent_ng_template_5_button_4_Template(rf, ctx) { if (rf & 1) {
-    const _r18 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "button", 20);
-    ɵɵlistener("click", function InputFileComponent_ng_template_5_button_4_Template_button_click_0_listener() { ɵɵrestoreView(_r18); const ctx_r17 = ɵɵnextContext(2); return ctx_r17.onLink(); });
-    ɵɵelementStart(1, "mat-icon");
-    ɵɵtext(2);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
+    const _r18 = i0.ɵɵgetCurrentView();
+    i0.ɵɵelementStart(0, "button", 20);
+    i0.ɵɵlistener("click", function InputFileComponent_ng_template_5_button_4_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r18); const ctx_r17 = i0.ɵɵnextContext(2); return ctx_r17.onLink(); });
+    i0.ɵɵelementStart(1, "mat-icon");
+    i0.ɵɵtext(2);
+    i0.ɵɵelementEnd();
+    i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const ctx_r15 = ɵɵnextContext(2);
-    ɵɵproperty("disabled", ctx_r15.disabled);
-    ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r15.iconLink);
+    const ctx_r15 = i0.ɵɵnextContext(2);
+    i0.ɵɵproperty("disabled", ctx_r15.disabled);
+    i0.ɵɵadvance(2);
+    i0.ɵɵtextInterpolate(ctx_r15.iconLink);
 } }
 function InputFileComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
-    const _r20 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "button", 14, 15);
-    ɵɵlistener("click", function InputFileComponent_ng_template_5_Template_button_click_0_listener() { ɵɵrestoreView(_r20); const _r16 = ɵɵreference(6); return _r16.click(); })("itemDrop", function InputFileComponent_ng_template_5_Template_button_itemDrop_0_listener($event) { ɵɵrestoreView(_r20); const _r14 = ɵɵreference(1); const ctx_r21 = ɵɵnextContext(); return ctx_r21.onSelectFile($event, _r14); })("itemDragOver", function InputFileComponent_ng_template_5_Template_button_itemDragOver_0_listener() { ɵɵrestoreView(_r20); const _r14 = ɵɵreference(1); const ctx_r22 = ɵɵnextContext(); return ctx_r22.onDragOver(_r14); })("itemDragLeave", function InputFileComponent_ng_template_5_Template_button_itemDragLeave_0_listener() { ɵɵrestoreView(_r20); const _r14 = ɵɵreference(1); const ctx_r23 = ɵɵnextContext(); return ctx_r23.onDragLeave(_r14); });
-    ɵɵelementStart(2, "mat-icon", 16);
-    ɵɵtext(3);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵtemplate(4, InputFileComponent_ng_template_5_button_4_Template, 3, 2, "button", 17);
-    ɵɵelementStart(5, "input", 18, 19);
-    ɵɵlistener("change", function InputFileComponent_ng_template_5_Template_input_change_5_listener($event) { ɵɵrestoreView(_r20); const _r14 = ɵɵreference(1); const ctx_r24 = ɵɵnextContext(); return ctx_r24.onSelectFile($event.target.files, _r14); });
-    ɵɵelementEnd();
+    const _r20 = i0.ɵɵgetCurrentView();
+    i0.ɵɵelementStart(0, "button", 14, 15);
+    i0.ɵɵlistener("click", function InputFileComponent_ng_template_5_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r20); const _r16 = i0.ɵɵreference(6); return _r16.click(); })("itemDrop", function InputFileComponent_ng_template_5_Template_button_itemDrop_0_listener($event) { i0.ɵɵrestoreView(_r20); const _r14 = i0.ɵɵreference(1); const ctx_r21 = i0.ɵɵnextContext(); return ctx_r21.onSelectFile($event, _r14); })("itemDragOver", function InputFileComponent_ng_template_5_Template_button_itemDragOver_0_listener() { i0.ɵɵrestoreView(_r20); const _r14 = i0.ɵɵreference(1); const ctx_r22 = i0.ɵɵnextContext(); return ctx_r22.onDragOver(_r14); })("itemDragLeave", function InputFileComponent_ng_template_5_Template_button_itemDragLeave_0_listener() { i0.ɵɵrestoreView(_r20); const _r14 = i0.ɵɵreference(1); const ctx_r23 = i0.ɵɵnextContext(); return ctx_r23.onDragLeave(_r14); });
+    i0.ɵɵelementStart(2, "mat-icon", 16);
+    i0.ɵɵtext(3);
+    i0.ɵɵelementEnd();
+    i0.ɵɵelementEnd();
+    i0.ɵɵtemplate(4, InputFileComponent_ng_template_5_button_4_Template, 3, 2, "button", 17);
+    i0.ɵɵelementStart(5, "input", 18, 19);
+    i0.ɵɵlistener("change", function InputFileComponent_ng_template_5_Template_input_change_5_listener($event) { i0.ɵɵrestoreView(_r20); const _r14 = i0.ɵɵreference(1); const ctx_r24 = i0.ɵɵnextContext(); return ctx_r24.onSelectFile($event.target.files, _r14); });
+    i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const ctx_r4 = ɵɵnextContext();
-    ɵɵproperty("disabled", ctx_r4.disabled);
-    ɵɵadvance(3);
-    ɵɵtextInterpolate(ctx_r4.iconAdd);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r4.linkEnabled);
-    ɵɵadvance(1);
-    ɵɵproperty("id", ctx_r4.id)("accept", ctx_r4.fileAccept);
-    ɵɵattribute("multiple", ctx_r4.fileLimit > 1 ? true : null);
+    const ctx_r4 = i0.ɵɵnextContext();
+    i0.ɵɵproperty("disabled", ctx_r4.disabled);
+    i0.ɵɵadvance(3);
+    i0.ɵɵtextInterpolate(ctx_r4.iconAdd);
+    i0.ɵɵadvance(1);
+    i0.ɵɵproperty("ngIf", ctx_r4.linkEnabled);
+    i0.ɵɵadvance(1);
+    i0.ɵɵproperty("id", ctx_r4.id)("accept", ctx_r4.fileAccept);
+    i0.ɵɵattribute("multiple", ctx_r4.fileLimit > 1 ? true : null);
 } }
 function InputFileComponent_ng_template_7_img_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "img", 26);
+    i0.ɵɵelement(0, "img", 26);
 } if (rf & 2) {
-    const file_r25 = ɵɵnextContext().$implicit;
-    ɵɵproperty("src", file_r25.preview, ɵɵsanitizeUrl);
+    const file_r25 = i0.ɵɵnextContext().$implicit;
+    i0.ɵɵproperty("src", file_r25.preview, i0.ɵɵsanitizeUrl);
 } }
 function InputFileComponent_ng_template_7_ng_container_3_div_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "div", 28);
+    i0.ɵɵelement(0, "div", 28);
 } if (rf & 2) {
-    const file_r25 = ɵɵnextContext(2).$implicit;
-    ɵɵproperty("innerHtml", file_r25.file.name, ɵɵsanitizeHtml);
+    const file_r25 = i0.ɵɵnextContext(2).$implicit;
+    i0.ɵɵproperty("innerHtml", file_r25.file.name, i0.ɵɵsanitizeHtml);
 } }
 function InputFileComponent_ng_template_7_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "mat-icon", 16);
-    ɵɵtext(2);
-    ɵɵelementEnd();
-    ɵɵtemplate(3, InputFileComponent_ng_template_7_ng_container_3_div_3_Template, 1, 1, "div", 27);
-    ɵɵelementContainerEnd();
+    i0.ɵɵelementContainerStart(0);
+    i0.ɵɵelementStart(1, "mat-icon", 16);
+    i0.ɵɵtext(2);
+    i0.ɵɵelementEnd();
+    i0.ɵɵtemplate(3, InputFileComponent_ng_template_7_ng_container_3_div_3_Template, 1, 1, "div", 27);
+    i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const file_r25 = ɵɵnextContext().$implicit;
-    const ctx_r29 = ɵɵnextContext();
-    ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r29.iconFile);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", file_r25.file);
+    const file_r25 = i0.ɵɵnextContext().$implicit;
+    const ctx_r29 = i0.ɵɵnextContext();
+    i0.ɵɵadvance(2);
+    i0.ɵɵtextInterpolate(ctx_r29.iconFile);
+    i0.ɵɵadvance(1);
+    i0.ɵɵproperty("ngIf", file_r25.file);
 } }
 function InputFileComponent_ng_template_7_Template(rf, ctx) { if (rf & 1) {
-    const _r36 = ɵɵgetCurrentView();
-    ɵɵtemplate(0, InputFileComponent_ng_template_7_img_0_Template, 1, 1, "img", 21);
-    ɵɵelementStart(1, "button", 22, 23);
-    ɵɵlistener("click", function InputFileComponent_ng_template_7_Template_button_click_1_listener() { ɵɵrestoreView(_r36); const _r30 = ɵɵreference(8); return _r30.click(); })("itemDrop", function InputFileComponent_ng_template_7_Template_button_itemDrop_1_listener($event) { ɵɵrestoreView(_r36); const index_r26 = ctx.index; const _r28 = ɵɵreference(2); const ctx_r37 = ɵɵnextContext(); return ctx_r37.onReplaceFile($event, index_r26, _r28); })("itemDragOver", function InputFileComponent_ng_template_7_Template_button_itemDragOver_1_listener() { ɵɵrestoreView(_r36); const _r28 = ɵɵreference(2); const ctx_r38 = ɵɵnextContext(); return ctx_r38.onDragOver(_r28); })("itemDragLeave", function InputFileComponent_ng_template_7_Template_button_itemDragLeave_1_listener() { ɵɵrestoreView(_r36); const _r28 = ɵɵreference(2); const ctx_r39 = ɵɵnextContext(); return ctx_r39.onDragLeave(_r28); });
-    ɵɵtemplate(3, InputFileComponent_ng_template_7_ng_container_3_Template, 4, 2, "ng-container", 4);
-    ɵɵelementEnd();
-    ɵɵelementStart(4, "button", 20);
-    ɵɵlistener("click", function InputFileComponent_ng_template_7_Template_button_click_4_listener() { ɵɵrestoreView(_r36); const index_r26 = ctx.index; const ctx_r40 = ɵɵnextContext(); return ctx_r40.onDeleteFile(index_r26); });
-    ɵɵelementStart(5, "mat-icon");
-    ɵɵtext(6);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(7, "input", 24, 25);
-    ɵɵlistener("change", function InputFileComponent_ng_template_7_Template_input_change_7_listener($event) { ɵɵrestoreView(_r36); const index_r26 = ctx.index; const _r28 = ɵɵreference(2); const _r30 = ɵɵreference(8); const ctx_r41 = ɵɵnextContext(); return ctx_r41.onReplaceFile($event.target.files, index_r26, _r28, _r30); });
-    ɵɵelementEnd();
+    const _r36 = i0.ɵɵgetCurrentView();
+    i0.ɵɵtemplate(0, InputFileComponent_ng_template_7_img_0_Template, 1, 1, "img", 21);
+    i0.ɵɵelementStart(1, "button", 22, 23);
+    i0.ɵɵlistener("click", function InputFileComponent_ng_template_7_Template_button_click_1_listener() { i0.ɵɵrestoreView(_r36); const _r30 = i0.ɵɵreference(8); return _r30.click(); })("itemDrop", function InputFileComponent_ng_template_7_Template_button_itemDrop_1_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r36); const index_r26 = restoredCtx.index; const _r28 = i0.ɵɵreference(2); const ctx_r37 = i0.ɵɵnextContext(); return ctx_r37.onReplaceFile($event, index_r26, _r28); })("itemDragOver", function InputFileComponent_ng_template_7_Template_button_itemDragOver_1_listener() { i0.ɵɵrestoreView(_r36); const _r28 = i0.ɵɵreference(2); const ctx_r38 = i0.ɵɵnextContext(); return ctx_r38.onDragOver(_r28); })("itemDragLeave", function InputFileComponent_ng_template_7_Template_button_itemDragLeave_1_listener() { i0.ɵɵrestoreView(_r36); const _r28 = i0.ɵɵreference(2); const ctx_r39 = i0.ɵɵnextContext(); return ctx_r39.onDragLeave(_r28); });
+    i0.ɵɵtemplate(3, InputFileComponent_ng_template_7_ng_container_3_Template, 4, 2, "ng-container", 4);
+    i0.ɵɵelementEnd();
+    i0.ɵɵelementStart(4, "button", 20);
+    i0.ɵɵlistener("click", function InputFileComponent_ng_template_7_Template_button_click_4_listener() { const restoredCtx = i0.ɵɵrestoreView(_r36); const index_r26 = restoredCtx.index; const ctx_r40 = i0.ɵɵnextContext(); return ctx_r40.onDeleteFile(index_r26); });
+    i0.ɵɵelementStart(5, "mat-icon");
+    i0.ɵɵtext(6);
+    i0.ɵɵelementEnd();
+    i0.ɵɵelementEnd();
+    i0.ɵɵelementStart(7, "input", 24, 25);
+    i0.ɵɵlistener("change", function InputFileComponent_ng_template_7_Template_input_change_7_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r36); const index_r26 = restoredCtx.index; const _r28 = i0.ɵɵreference(2); const _r30 = i0.ɵɵreference(8); const ctx_r41 = i0.ɵɵnextContext(); return ctx_r41.onReplaceFile($event.target.files, index_r26, _r28, _r30); });
+    i0.ɵɵelementEnd();
 } if (rf & 2) {
     const file_r25 = ctx.$implicit;
-    const ctx_r6 = ɵɵnextContext();
-    ɵɵproperty("ngIf", file_r25.preview);
-    ɵɵadvance(1);
-    ɵɵproperty("disabled", ctx_r6.disabled);
-    ɵɵadvance(2);
-    ɵɵproperty("ngIf", !file_r25.preview);
-    ɵɵadvance(1);
-    ɵɵproperty("disabled", ctx_r6.disabled);
-    ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r6.iconDelete);
-    ɵɵadvance(1);
-    ɵɵproperty("accept", ctx_r6.fileAccept);
+    const ctx_r6 = i0.ɵɵnextContext();
+    i0.ɵɵproperty("ngIf", file_r25.preview);
+    i0.ɵɵadvance(1);
+    i0.ɵɵproperty("disabled", ctx_r6.disabled);
+    i0.ɵɵadvance(2);
+    i0.ɵɵproperty("ngIf", !file_r25.preview);
+    i0.ɵɵadvance(1);
+    i0.ɵɵproperty("disabled", ctx_r6.disabled);
+    i0.ɵɵadvance(2);
+    i0.ɵɵtextInterpolate(ctx_r6.iconDelete);
+    i0.ɵɵadvance(1);
+    i0.ɵɵproperty("accept", ctx_r6.fileAccept);
 } }
 function InputFileComponent_ng_template_9_Template(rf, ctx) { if (rf & 1) {
-    const _r43 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "form", 29);
-    ɵɵlistener("ngSubmit", function InputFileComponent_ng_template_9_Template_form_ngSubmit_0_listener() { ɵɵrestoreView(_r43); const ctx_r42 = ɵɵnextContext(); return ctx_r42.onSubmitLink(); });
-    ɵɵelementStart(1, "mat-form-field", 30);
-    ɵɵelement(2, "input", 31);
-    ɵɵelementEnd();
-    ɵɵelementStart(3, "div", 32);
-    ɵɵelementStart(4, "button", 33);
-    ɵɵlistener("click", function InputFileComponent_ng_template_9_Template_button_click_4_listener() { ɵɵrestoreView(_r43); const ctx_r44 = ɵɵnextContext(); return ctx_r44.onLink(); });
-    ɵɵelementStart(5, "mat-icon");
-    ɵɵtext(6, "arrow_back");
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(7, "button", 34);
-    ɵɵelementStart(8, "mat-icon");
-    ɵɵtext(9, "check");
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
+    const _r43 = i0.ɵɵgetCurrentView();
+    i0.ɵɵelementStart(0, "form", 29);
+    i0.ɵɵlistener("ngSubmit", function InputFileComponent_ng_template_9_Template_form_ngSubmit_0_listener() { i0.ɵɵrestoreView(_r43); const ctx_r42 = i0.ɵɵnextContext(); return ctx_r42.onSubmitLink(); });
+    i0.ɵɵelementStart(1, "mat-form-field", 30);
+    i0.ɵɵelement(2, "input", 31);
+    i0.ɵɵelementEnd();
+    i0.ɵɵelementStart(3, "div", 32);
+    i0.ɵɵelementStart(4, "button", 33);
+    i0.ɵɵlistener("click", function InputFileComponent_ng_template_9_Template_button_click_4_listener() { i0.ɵɵrestoreView(_r43); const ctx_r44 = i0.ɵɵnextContext(); return ctx_r44.onLink(); });
+    i0.ɵɵelementStart(5, "mat-icon");
+    i0.ɵɵtext(6, "arrow_back");
+    i0.ɵɵelementEnd();
+    i0.ɵɵelementEnd();
+    i0.ɵɵelementStart(7, "button", 34);
+    i0.ɵɵelementStart(8, "mat-icon");
+    i0.ɵɵtext(9, "check");
+    i0.ɵɵelementEnd();
+    i0.ɵɵelementEnd();
+    i0.ɵɵelementEnd();
+    i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const ctx_r8 = ɵɵnextContext();
-    ɵɵproperty("formGroup", ctx_r8.form);
-    ɵɵadvance(2);
-    ɵɵproperty("placeholder", ctx_r8.placeholderLink);
-    ɵɵadvance(2);
-    ɵɵproperty("disabled", ctx_r8.disabled);
-    ɵɵadvance(3);
-    ɵɵproperty("disabled", ctx_r8.disabled);
+    const ctx_r8 = i0.ɵɵnextContext();
+    i0.ɵɵproperty("formGroup", ctx_r8.form);
+    i0.ɵɵadvance(2);
+    i0.ɵɵproperty("placeholder", ctx_r8.placeholderLink);
+    i0.ɵɵadvance(2);
+    i0.ɵɵproperty("disabled", ctx_r8.disabled);
+    i0.ɵɵadvance(3);
+    i0.ɵɵproperty("disabled", ctx_r8.disabled);
 } }
 class InputFileComponent {
     constructor(formBuilder, inputFileService) {
@@ -615,38 +622,38 @@ class InputFileComponent {
     }
 }
 InputFileComponent.nextId = 0;
-InputFileComponent.ɵfac = function InputFileComponent_Factory(t) { return new (t || InputFileComponent)(ɵɵdirectiveInject(FormBuilder), ɵɵdirectiveInject(InputFileService)); };
-InputFileComponent.ɵcmp = ɵɵdefineComponent({ type: InputFileComponent, selectors: [["input-file"]], viewQuery: function InputFileComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵɵviewQuery(_c0, true);
+InputFileComponent.ɵfac = function InputFileComponent_Factory(t) { return new (t || InputFileComponent)(i0.ɵɵdirectiveInject(i1.FormBuilder), i0.ɵɵdirectiveInject(InputFileService)); };
+InputFileComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: InputFileComponent, selectors: [["input-file"]], viewQuery: function InputFileComponent_Query(rf, ctx) { if (rf & 1) {
+        i0.ɵɵviewQuery(_c0, 5);
     } if (rf & 2) {
-        var _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.fileInput = _t.first);
-    } }, inputs: { disabled: "disabled", placeholder: "placeholder", classAnimation: "classAnimation", fileAccept: "fileAccept", fileLimit: "fileLimit", iconAdd: "iconAdd", iconDelete: "iconDelete", iconFile: "iconFile", iconLink: "iconLink", linkEnabled: "linkEnabled", placeholderLink: "placeholderLink", sizeLimit: "sizeLimit" }, outputs: { acceptedFile: "acceptedFile", deletedFile: "deletedFile", rejectedFile: "rejectedFile" }, features: [ɵɵProvidersFeature([
+        let _t;
+        i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.fileInput = _t.first);
+    } }, inputs: { disabled: "disabled", placeholder: "placeholder", classAnimation: "classAnimation", fileAccept: "fileAccept", fileLimit: "fileLimit", iconAdd: "iconAdd", iconDelete: "iconDelete", iconFile: "iconFile", iconLink: "iconLink", linkEnabled: "linkEnabled", placeholderLink: "placeholderLink", sizeLimit: "sizeLimit" }, outputs: { acceptedFile: "acceptedFile", deletedFile: "deletedFile", rejectedFile: "rejectedFile" }, features: [i0.ɵɵProvidersFeature([
             {
                 provide: NG_VALUE_ACCESSOR,
                 useExisting: forwardRef(() => InputFileComponent),
                 multi: true
             }
         ])], decls: 11, vars: 3, consts: [[1, "input-file-container"], ["class", "mat-orphan-label", 3, "for", "active", "innerHtml", 4, "ngIf"], [1, "files-container"], [4, "ngFor", "ngForOf"], [4, "ngIf"], ["addTemplate", ""], ["fileTemplate", ""], ["linkTemplate", ""], [1, "mat-orphan-label", 3, "for", "innerHtml"], [1, "file-container", 3, "ngClass"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "file-container"], [4, "ngIf", "ngIfElse"], [4, "ngTemplateOutlet"], ["mat-button", "", "inputFileDropZone", "", "type", "button", 1, "file-button", 3, "disabled", "click", "itemDrop", "itemDragOver", "itemDragLeave"], ["selectButton", ""], [1, "input-icon"], ["mat-button", "", "class", "secondary-button", "type", "button", 3, "disabled", "click", 4, "ngIf"], ["hidden", "", "type", "file", 3, "id", "accept", "change"], ["fileInput", ""], ["mat-button", "", "type", "button", 1, "secondary-button", 3, "disabled", "click"], ["class", "image-preview", 3, "src", 4, "ngIf"], ["mat-button", "", "inputFileDropZone", "", "type", "button", 1, "replace-button", 3, "disabled", "click", "itemDrop", "itemDragOver", "itemDragLeave"], ["replaceButton", ""], ["hidden", "", "type", "file", 3, "accept", "change"], ["fileReplace", ""], [1, "image-preview", 3, "src"], ["class", "file-name text-truncate", 3, "innerHtml", 4, "ngIf"], [1, "file-name", "text-truncate", 3, "innerHtml"], ["novalidate", "", 1, "form-link", "slide-in-up", 3, "formGroup", "ngSubmit"], [1, "input-link"], ["matInput", "", "formControlName", "link", 3, "placeholder"], [1, "form-link-button"], ["mat-button", "", "type", "button", 3, "disabled", "click"], ["mat-button", "", "type", "submit", 3, "disabled"]], template: function InputFileComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵelementStart(0, "div", 0);
-        ɵɵtemplate(1, InputFileComponent_label_1_Template, 1, 4, "label", 1);
-        ɵɵelementStart(2, "div", 2);
-        ɵɵtemplate(3, InputFileComponent_ng_container_3_Template, 3, 6, "ng-container", 3);
-        ɵɵtemplate(4, InputFileComponent_ng_container_4_Template, 3, 2, "ng-container", 4);
-        ɵɵelementEnd();
-        ɵɵelementEnd();
-        ɵɵtemplate(5, InputFileComponent_ng_template_5_Template, 7, 6, "ng-template", null, 5, ɵɵtemplateRefExtractor);
-        ɵɵtemplate(7, InputFileComponent_ng_template_7_Template, 9, 6, "ng-template", null, 6, ɵɵtemplateRefExtractor);
-        ɵɵtemplate(9, InputFileComponent_ng_template_9_Template, 10, 4, "ng-template", null, 7, ɵɵtemplateRefExtractor);
+        i0.ɵɵelementStart(0, "div", 0);
+        i0.ɵɵtemplate(1, InputFileComponent_label_1_Template, 1, 4, "label", 1);
+        i0.ɵɵelementStart(2, "div", 2);
+        i0.ɵɵtemplate(3, InputFileComponent_ng_container_3_Template, 3, 6, "ng-container", 3);
+        i0.ɵɵtemplate(4, InputFileComponent_ng_container_4_Template, 3, 2, "ng-container", 4);
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementEnd();
+        i0.ɵɵtemplate(5, InputFileComponent_ng_template_5_Template, 7, 6, "ng-template", null, 5, i0.ɵɵtemplateRefExtractor);
+        i0.ɵɵtemplate(7, InputFileComponent_ng_template_7_Template, 9, 6, "ng-template", null, 6, i0.ɵɵtemplateRefExtractor);
+        i0.ɵɵtemplate(9, InputFileComponent_ng_template_9_Template, 10, 4, "ng-template", null, 7, i0.ɵɵtemplateRefExtractor);
     } if (rf & 2) {
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.placeholder);
-        ɵɵadvance(2);
-        ɵɵproperty("ngForOf", ctx.files);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.canAddFile);
-    } }, directives: [NgIf, NgForOf, NgClass, NgTemplateOutlet, MatButton, DropZoneDirective, MatIcon, ɵangular_packages_forms_forms_y, NgControlStatusGroup, FormGroupDirective, MatFormField, MatInput, DefaultValueAccessor, NgControlStatus, FormControlName], styles: [".input-file-container[_ngcontent-%COMP%]{position:relative}.input-file-container[_ngcontent-%COMP%]   .files-container[_ngcontent-%COMP%]{display:flex;flex-direction:row;flex-wrap:wrap;padding-top:1.25rem}.input-file-container[_ngcontent-%COMP%]   .file-button[_ngcontent-%COMP%], .input-file-container[_ngcontent-%COMP%]   .file-container[_ngcontent-%COMP%]{align-items:center;display:flex;height:10rem;justify-content:center;width:10rem}.input-file-container[_ngcontent-%COMP%]   .secondary-button[_ngcontent-%COMP%]{width:10rem}.input-file-container[_ngcontent-%COMP%]   .file-button[_ngcontent-%COMP%]{flex:1}.input-file-container[_ngcontent-%COMP%]   .file-container[_ngcontent-%COMP%]{flex-direction:column;margin-right:1rem;overflow:hidden}.input-file-container[_ngcontent-%COMP%]   .replace-button[_ngcontent-%COMP%]{flex:1;width:10rem}.input-file-container[_ngcontent-%COMP%]   .mat-button[_ngcontent-%COMP%]:focus{outline:0}.input-file-container[_ngcontent-%COMP%]   .file-name[_ngcontent-%COMP%]{width:calc(10rem - 2.5rem)}.input-file-container[_ngcontent-%COMP%]   .image-preview[_ngcontent-%COMP%]{position:absolute;height:10rem;-o-object-fit:contain;object-fit:contain;width:10rem}.input-file-container[_ngcontent-%COMP%]   .input-icon[_ngcontent-%COMP%]{font-size:calc(10rem / 4);height:calc(10rem / 4);width:calc(10rem / 4)}.input-file-container[_ngcontent-%COMP%]   .form-link[_ngcontent-%COMP%]{display:flex;flex-direction:column;width:10rem}.input-file-container[_ngcontent-%COMP%]   .input-link[_ngcontent-%COMP%]{width:10rem}.input-file-container[_ngcontent-%COMP%]   .form-link-button[_ngcontent-%COMP%]{display:flex;flex-direction:row}.input-file-container[_ngcontent-%COMP%]   .form-link-button[_ngcontent-%COMP%]   .mat-button[_ngcontent-%COMP%]{min-width:calc(10rem / 2);width:calc(10rem / 2)}.input-file-container[_ngcontent-%COMP%]   .mat-orphan-label[_ngcontent-%COMP%]{color:rgba(0,0,0,.54);display:block;font-size:1rem;left:0;margin:0;position:absolute;top:0;transform-origin:0;transition:.4s cubic-bezier(.25,.8,.25,1),width .4s cubic-bezier(.25,.8,.25,1)}.input-file-container[_ngcontent-%COMP%]   .mat-orphan-label.active[_ngcontent-%COMP%]{transform:scale(.75)}@-webkit-keyframes bounceIn{20%,40%,60%,80%,from,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:scale3d(.3,.3,.3)}20%{transform:scale3d(1.1,1.1,1.1)}40%{transform:scale3d(.9,.9,.9)}60%{opacity:1;transform:scale3d(1.03,1.03,1.03)}80%{transform:scale3d(.97,.97,.97)}to{opacity:1;transform:scale3d(1,1,1)}}@keyframes bounceIn{20%,40%,60%,80%,from,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:scale3d(.3,.3,.3)}20%{transform:scale3d(1.1,1.1,1.1)}40%{transform:scale3d(.9,.9,.9)}60%{opacity:1;transform:scale3d(1.03,1.03,1.03)}80%{transform:scale3d(.97,.97,.97)}to{opacity:1;transform:scale3d(1,1,1)}}.bounce-in[_ngcontent-%COMP%]{-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-name:bounceIn;animation-name:bounceIn}@-webkit-keyframes slideInUp{from{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:translate3d(0,0,0)}}@keyframes slideInUp{from{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:translate3d(0,0,0)}}.slide-in-up[_ngcontent-%COMP%]{-webkit-animation-duration:.25s;animation-duration:.25s;-webkit-animation-name:slideInUp;animation-name:slideInUp}"] });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(InputFileComponent, [{
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngIf", ctx.placeholder);
+        i0.ɵɵadvance(2);
+        i0.ɵɵproperty("ngForOf", ctx.files);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngIf", ctx.canAddFile);
+    } }, directives: [i3.NgIf, i3.NgForOf, i3.NgClass, i3.NgTemplateOutlet, i4.MatButton, DropZoneDirective, i6.MatIcon, i1.ɵNgNoValidate, i1.NgControlStatusGroup, i1.FormGroupDirective, i7.MatFormField, i8.MatInput, i1.DefaultValueAccessor, i1.NgControlStatus, i1.FormControlName], styles: [".input-file-container[_ngcontent-%COMP%]{position:relative}.input-file-container[_ngcontent-%COMP%]   .files-container[_ngcontent-%COMP%]{display:flex;flex-direction:row;flex-wrap:wrap;padding-top:1.25rem}.input-file-container[_ngcontent-%COMP%]   .file-button[_ngcontent-%COMP%], .input-file-container[_ngcontent-%COMP%]   .file-container[_ngcontent-%COMP%]{align-items:center;display:flex;height:10rem;justify-content:center;width:10rem}.input-file-container[_ngcontent-%COMP%]   .secondary-button[_ngcontent-%COMP%]{width:10rem}.input-file-container[_ngcontent-%COMP%]   .file-button[_ngcontent-%COMP%]{flex:1}.input-file-container[_ngcontent-%COMP%]   .file-container[_ngcontent-%COMP%]{flex-direction:column;margin-right:1rem;overflow:hidden}.input-file-container[_ngcontent-%COMP%]   .replace-button[_ngcontent-%COMP%]{flex:1;width:10rem}.input-file-container[_ngcontent-%COMP%]   .mat-button[_ngcontent-%COMP%]:focus{outline:0}.input-file-container[_ngcontent-%COMP%]   .file-name[_ngcontent-%COMP%]{width:calc(10rem - 2.5rem)}.input-file-container[_ngcontent-%COMP%]   .image-preview[_ngcontent-%COMP%]{position:absolute;height:10rem;-o-object-fit:contain;object-fit:contain;width:10rem}.input-file-container[_ngcontent-%COMP%]   .input-icon[_ngcontent-%COMP%]{font-size:calc(10rem / 4);height:calc(10rem / 4);width:calc(10rem / 4)}.input-file-container[_ngcontent-%COMP%]   .form-link[_ngcontent-%COMP%]{display:flex;flex-direction:column;width:10rem}.input-file-container[_ngcontent-%COMP%]   .input-link[_ngcontent-%COMP%]{width:10rem}.input-file-container[_ngcontent-%COMP%]   .form-link-button[_ngcontent-%COMP%]{display:flex;flex-direction:row}.input-file-container[_ngcontent-%COMP%]   .form-link-button[_ngcontent-%COMP%]   .mat-button[_ngcontent-%COMP%]{min-width:calc(10rem / 2);width:calc(10rem / 2)}.input-file-container[_ngcontent-%COMP%]   .mat-orphan-label[_ngcontent-%COMP%]{color:rgba(0,0,0,.54);display:block;font-size:1rem;left:0;margin:0;position:absolute;top:0;transform-origin:0;transition:.4s cubic-bezier(.25,.8,.25,1),width .4s cubic-bezier(.25,.8,.25,1)}.input-file-container[_ngcontent-%COMP%]   .mat-orphan-label.active[_ngcontent-%COMP%]{transform:scale(.75)}@-webkit-keyframes bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:scale3d(.3,.3,.3)}20%{transform:scale3d(1.1,1.1,1.1)}40%{transform:scale3d(.9,.9,.9)}60%{opacity:1;transform:scale3d(1.03,1.03,1.03)}80%{transform:scale3d(.97,.97,.97)}to{opacity:1;transform:scaleX(1)}}@keyframes bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:scale3d(.3,.3,.3)}20%{transform:scale3d(1.1,1.1,1.1)}40%{transform:scale3d(.9,.9,.9)}60%{opacity:1;transform:scale3d(1.03,1.03,1.03)}80%{transform:scale3d(.97,.97,.97)}to{opacity:1;transform:scaleX(1)}}.bounce-in[_ngcontent-%COMP%]{-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-name:bounceIn;animation-name:bounceIn}@-webkit-keyframes slideInUp{0%{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:translateZ(0)}}@keyframes slideInUp{0%{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:translateZ(0)}}.slide-in-up[_ngcontent-%COMP%]{-webkit-animation-duration:.25s;animation-duration:.25s;-webkit-animation-name:slideInUp;animation-name:slideInUp}"] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(InputFileComponent, [{
         type: Component,
         args: [{
                 selector: 'input-file',
@@ -660,7 +667,7 @@ InputFileComponent.ɵcmp = ɵɵdefineComponent({ type: InputFileComponent, selec
                     }
                 ]
             }]
-    }], function () { return [{ type: FormBuilder }, { type: InputFileService }]; }, { disabled: [{
+    }], function () { return [{ type: i1.FormBuilder }, { type: InputFileService }]; }, { disabled: [{
             type: Input
         }], placeholder: [{
             type: Input
@@ -706,8 +713,9 @@ class InputFileModule {
         };
     }
 }
-InputFileModule.ɵmod = ɵɵdefineNgModule({ type: InputFileModule });
-InputFileModule.ɵinj = ɵɵdefineInjector({ factory: function InputFileModule_Factory(t) { return new (t || InputFileModule)(); }, providers: [
+InputFileModule.ɵfac = function InputFileModule_Factory(t) { return new (t || InputFileModule)(); };
+InputFileModule.ɵmod = /*@__PURE__*/ i0.ɵɵdefineNgModule({ type: InputFileModule });
+InputFileModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({ providers: [
         InputFileService
     ], imports: [[
             CommonModule,
@@ -718,15 +726,7 @@ InputFileModule.ɵinj = ɵɵdefineInjector({ factory: function InputFileModule_F
             MatInputModule,
             ReactiveFormsModule
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(InputFileModule, { declarations: [DropZoneDirective,
-        InputFileComponent], imports: [CommonModule,
-        FormsModule,
-        MatButtonModule,
-        MatFormFieldModule,
-        MatIconModule,
-        MatInputModule,
-        ReactiveFormsModule], exports: [InputFileComponent] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(InputFileModule, [{
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(InputFileModule, [{
         type: NgModule,
         args: [{
                 declarations: [
@@ -751,6 +751,14 @@ InputFileModule.ɵinj = ɵɵdefineInjector({ factory: function InputFileModule_F
                 entryComponents: [InputFileComponent]
             }]
     }], null, null); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(InputFileModule, { declarations: [DropZoneDirective,
+        InputFileComponent], imports: [CommonModule,
+        FormsModule,
+        MatButtonModule,
+        MatFormFieldModule,
+        MatIconModule,
+        MatInputModule,
+        ReactiveFormsModule], exports: [InputFileComponent] }); })();
 
 /**
  * Generated bundle index. Do not edit.

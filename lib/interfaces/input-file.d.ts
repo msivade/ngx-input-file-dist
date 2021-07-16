@@ -4,3 +4,4 @@ export interface InputFile {
     link?: string;
     preview?: string | ArrayBuffer;
 }
+//# sourceMappingURL=input-file.d.ts.map

@@ -50,7 +50,7 @@ export declare class InputFileComponent implements ControlValueAccessor, OnInit 
     files: InputFile[];
     form: FormGroup;
     id: string;
-    onChange: (files: InputFile[]) => void;
+    onChange: (files: Array<InputFile>) => void;
     onTouched: () => void;
     get canAddFile(): boolean;
     constructor(formBuilder: FormBuilder, inputFileService: InputFileService);
@@ -130,6 +130,7 @@ export declare class InputFileComponent implements ControlValueAccessor, OnInit 
      * Sets the reactive form to insert a link.
      */
     private setForm;
-    static ɵfac: i0.ɵɵFactoryDef<InputFileComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<InputFileComponent, "input-file", never, { "disabled": "disabled"; "placeholder": "placeholder"; "classAnimation": "classAnimation"; "fileAccept": "fileAccept"; "fileLimit": "fileLimit"; "iconAdd": "iconAdd"; "iconDelete": "iconDelete"; "iconFile": "iconFile"; "iconLink": "iconLink"; "linkEnabled": "linkEnabled"; "placeholderLink": "placeholderLink"; "sizeLimit": "sizeLimit"; }, { "acceptedFile": "acceptedFile"; "deletedFile": "deletedFile"; "rejectedFile": "rejectedFile"; }, never, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<InputFileComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<InputFileComponent, "input-file", never, { "disabled": "disabled"; "placeholder": "placeholder"; "classAnimation": "classAnimation"; "fileAccept": "fileAccept"; "fileLimit": "fileLimit"; "iconAdd": "iconAdd"; "iconDelete": "iconDelete"; "iconFile": "iconFile"; "iconLink": "iconLink"; "linkEnabled": "linkEnabled"; "placeholderLink": "placeholderLink"; "sizeLimit": "sizeLimit"; }, { "acceptedFile": "acceptedFile"; "deletedFile": "deletedFile"; "rejectedFile": "rejectedFile"; }, never, never>;
 }
+//# sourceMappingURL=input-file.component.d.ts.map
