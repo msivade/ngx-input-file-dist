@@ -1,1 +1,0 @@
-{"version":3,"file":"input-file.module.d.ts","sourceRoot":"","sources":["../../../projects/ngx-input-file/src/lib/input-file.module.ts"],"names":[],"mappings":"AAIA,OAAO,EAAE,eAAe,EAAE,MAAM,gCAAgC,CAAC;AAMjE,OAAO,EAAE,mBAAmB,EAAY,MAAM,eAAe,CAAC;;;;;;;;;;AAE9D,qBAuBa,eAAe;WACV,OAAO,CAAC,MAAM,EAAE,eAAe,GAAG,mBAAmB,CAAC,eAAe,CAAC;iCAD3E,eAAe;0CAAf,eAAe;kCAAf,eAAe;CAU3B"}
