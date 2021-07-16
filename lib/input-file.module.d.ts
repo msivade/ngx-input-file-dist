@@ -10,7 +10,9 @@ import * as i6 from "@angular/material/form-field";
 import * as i7 from "@angular/material/icon";
 import * as i8 from "@angular/material/input";
 export declare class InputFileModule {
-    static forRoot(config: InputFileConfig): i0.ModuleWithProviders<InputFileModule>;
+    static forRoot(config: InputFileConfig): ModuleWithProviders<InputFileModule>;
+    static ɵfac: i0.ɵɵFactoryDef<InputFileModule, never>;
     static ɵmod: i0.ɵɵNgModuleDefWithMeta<InputFileModule, [typeof i1.DropZoneDirective, typeof i2.InputFileComponent], [typeof i3.CommonModule, typeof i4.FormsModule, typeof i5.MatButtonModule, typeof i6.MatFormFieldModule, typeof i7.MatIconModule, typeof i8.MatInputModule, typeof i4.ReactiveFormsModule], [typeof i2.InputFileComponent]>;
     static ɵinj: i0.ɵɵInjectorDef<InputFileModule>;
 }
+//# sourceMappingURL=input-file.module.d.ts.map

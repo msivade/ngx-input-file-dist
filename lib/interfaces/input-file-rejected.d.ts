@@ -4,3 +4,4 @@ export interface InputFileRejected {
     reason: InputFileRejectedReason;
     file: InputFile;
 }
+//# sourceMappingURL=input-file-rejected.d.ts.map

@@ -3,3 +3,4 @@ export declare enum InputFileRejectedReason {
     limitReached = 1,
     sizeReached = 2
 }
+//# sourceMappingURL=input-file-rejected-reason.d.ts.map

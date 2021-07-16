@@ -10,3 +10,4 @@ export interface InputFileConfig {
     placeholderLink?: string;
     sizeLimit?: number;
 }
+//# sourceMappingURL=input-file-config.d.ts.map
